@@ -1,0 +1,20 @@
+# Watchlist — strings that must never appear in a file that leaves this vault.
+#
+# Copy this to watchlist.txt and fill it in. _private/ is git-ignored, so the
+# watchlist itself is never committed — it does not become a record of who you
+# are protecting.
+#
+# One entry per line. Matching is case-insensitive, substring-based.
+# Lines starting with # are ignored.
+#
+# Put in here:
+#   - your full name, and any variants
+#   - your email addresses
+#   - your usernames and handles
+#   - your employer, if that should not travel
+#   - the names of people in your life who appear in your notes
+#
+# Examples (delete these):
+# Jane Smith
+# jane.smith@example.com
+# janesmith_

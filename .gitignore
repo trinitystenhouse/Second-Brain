@@ -1,0 +1,58 @@
+# ---------------------------------------------------------------------------
+# Your notes are yours.
+#
+# This kit tracks its own scaffolding — docs, scripts, skills, templates and
+# the Example spoke. It does NOT track what you write. That means you cannot
+# accidentally push your second brain to a public remote, and `git status`
+# stays readable instead of listing every note you touched today.
+#
+# Note on syntax: git cannot re-include a file whose parent DIRECTORY is
+# excluded, so everything below ignores directory *contents* (`dir/*`) rather
+# than the directory itself. Keep that shape if you edit this.
+#
+# Spokes you create are added here by scripts/new_spoke.sh, at the bottom.
+# Want to track one deliberately — a public research notebook, say? Delete its
+# line. See docs/VERSIONING.md before you do.
+# ---------------------------------------------------------------------------
+
+# --- Your personal layer ---------------------------------------------------
+_self/*
+!_self/self-interview.md
+!_self/README.md
+
+# --- Raw and sensitive material -------------------------------------------
+_private/*
+!_private/.gitkeep
+!_private/watchlist.example.txt
+
+# --- Your inbox and generated briefs ---------------------------------------
+_inbox/*
+!_inbox/.gitkeep
+!_inbox/briefs
+_inbox/briefs/*
+!_inbox/briefs/.gitkeep
+
+# --- Weekly idea logs (the cross-domain map itself stays tracked) ----------
+_maps/ideas/*
+!_maps/ideas/.gitkeep
+
+# --- Ingest staging and script backups ------------------------------------
+**/_staged/
+**/_processed/
+*.bak
+
+# --- OS, editor and language noise ----------------------------------------
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.venv/
+venv/
+.idea/
+.vscode/
+
+# --- Obsidian window state (vault config itself is fine to keep) ----------
+.obsidian/workspace*
+.obsidian/cache
+
+# --- Your spokes (added automatically by scripts/new_spoke.sh) ------------

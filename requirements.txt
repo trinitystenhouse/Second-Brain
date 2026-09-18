@@ -1,0 +1,13 @@
+# All optional. The kit works with zero dependencies — these just
+# widen what the ingest scripts can read.
+#
+#   pip install -r requirements.txt
+#
+# Or install only what you need:
+#   pip install pypdf          # PDF text extraction (no system tools needed)
+#   pip install python-docx    # .docx files
+#   pip install beautifulsoup4 # better HTML/URL extraction
+
+pypdf>=4.0
+python-docx>=1.1
+beautifulsoup4>=4.12
